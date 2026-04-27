@@ -1,4 +1,4 @@
-# ⚡ Module 5: Azure & DevOps — Deep Cheat Sheet
+# Module 5: Azure & DevOps — Deep Cheat Sheet
 
 **Purpose:** Fast + deep revision before interviews  
 **Level:** Mid–Senior (.NET Full Stack, 3–5 yrs)  
@@ -6,9 +6,9 @@
 
 ---
 
-# ☁️ 1. Azure Fundamentals
+# 1. Azure Fundamentals
 
-## 🔹 Cloud Models
+## Cloud Models
 
 | Model | You Manage | Azure Example |
 |------|-----------|--------------|
@@ -17,61 +17,61 @@
 | FaaS | Code only | Azure Functions |
 | SaaS | Nothing | Microsoft 365 |
 
-👉 **Interview Line:**
+**Interview Line:**
 “We used PaaS services to reduce infrastructure overhead and focus on business logic.”
 
 ---
 
-## 🔹 Core Concepts
+## Core Concepts
 
 - **Resource Group:** Logical container  
 - **Region:** Physical location  
 - **Availability Zone:** High availability  
 
-👉 **Important:**
+ **Important:**
 - Same RG → same lifecycle  
 - Use multiple regions for DR  
 
 ---
 
-## 🔹 ARM vs Bicep
+## ARM vs Bicep
 
 - ARM → JSON (complex)  
 - Bicep → Clean + readable  
 
-👉 Prefer **Bicep (modern approach)**
+Prefer **Bicep (modern approach)**
 
 ---
 
-# 🌐 2. Azure App Service (VERY IMPORTANT)
+# 2. Azure App Service (VERY IMPORTANT)
 
-## 🔹 What & Why
+## What & Why
 
 - PaaS for hosting APIs  
 - Fully managed runtime  
 
 ---
 
-## 🔹 App Service Plan
+## App Service Plan
 
 - Defines **compute resources**
 - Multiple apps can share same plan  
 
 ---
 
-## 🔹 Scaling
+## Scaling
 
 - Vertical → Increase size  
 - Horizontal → Increase instances  
 
-👉 **Auto-scale triggers:**
+**Auto-scale triggers:**
 - CPU > threshold  
 - Memory  
 - HTTP queue  
 
 ---
 
-## 🔹 Deployment Slots (CRITICAL)
+## Deployment Slots (CRITICAL)
 
 - Staging + Production  
 
@@ -82,12 +82,12 @@ Deploy → Test → Swap
 - Zero downtime  
 - Instant rollback  
 
-👉 **Interview Line:**
+**Interview Line:**
 “We used deployment slots to achieve zero downtime deployments.”
 
 ---
 
-## 🔹 Networking
+## Networking
 
 - VNet Integration  
 - Private Endpoint  
@@ -95,16 +95,16 @@ Deploy → Test → Swap
 
 ---
 
-# ⚡ 3. Azure Functions
+# 3. Azure Functions
 
-## 🔹 Concept
+## Concept
 
 - Serverless (event-driven)  
 - Executes on trigger  
 
 ---
 
-## 🔹 Plans
+## Plans
 
 | Plan | Key Point |
 |------|----------|
@@ -114,16 +114,16 @@ Deploy → Test → Swap
 
 ---
 
-## 🔹 Cold Start
+## Cold Start
 
 - Delay in execution  
-👉 Avoid using:
+Avoid using:
 - Premium plan  
 - Keep warm  
 
 ---
 
-## 🔹 Triggers
+## Triggers
 
 - HTTP  
 - Timer  
@@ -132,18 +132,18 @@ Deploy → Test → Swap
 
 ---
 
-## 🔹 Real Use
+## Real Use
 
-👉 Background processing, async workflows  
+Background processing, async workflows  
 
-👉 **Interview Line:**
+**Interview Line:**
 “We used Azure Functions to process asynchronous workflows and reduce latency.”
 
 ---
 
-# 🗄️ 4. Azure SQL
+# 4. Azure SQL
 
-## 🔹 Types
+## Types
 
 - Azure SQL DB  
 - Managed Instance  
@@ -151,7 +151,7 @@ Deploy → Test → Swap
 
 ---
 
-## 🔹 Performance Optimization
+## Performance Optimization
 
 - Indexing  
 - Query tuning  
@@ -160,28 +160,28 @@ Deploy → Test → Swap
 
 ---
 
-## 🔹 Index Types
+## Index Types
 
 - Clustered → sorted data  
 - Non-clustered → separate structure  
 
 ---
 
-## 🔹 HA & DR
+## HA & DR
 
 - Geo-replication  
 - Failover groups  
 
 ---
 
-👉 **Interview Line:**
+**Interview Line:**
 “We optimized queries and resolved N+1 problem using EF Core Include.”
 
 ---
 
-# 🔐 5. Azure Key Vault
+# 5. Azure Key Vault
 
-## 🔹 Purpose
+## Purpose
 
 Secure storage for:
 - Secrets  
@@ -190,34 +190,34 @@ Secure storage for:
 
 ---
 
-## 🔹 Best Practices
+## Best Practices
 
 - Use Managed Identity  
 - Avoid storing secrets in code  
 
 ---
 
-## 🔹 Access Methods
+## Access Methods
 
 - RBAC (preferred)  
 - Access Policies  
 
 ---
 
-👉 **Interview Line:**
+**Interview Line:**
 “We used Managed Identity to securely access Key Vault without storing credentials.”
 
 ---
 
-# 📊 6. Application Insights
+# 6. Application Insights
 
-## 🔹 Purpose
+## Purpose
 
 Monitoring + observability  
 
 ---
 
-## 🔹 Tracks
+## Tracks
 
 - Requests  
 - Dependencies  
@@ -226,7 +226,7 @@ Monitoring + observability
 
 ---
 
-## 🔹 Key Concepts
+## Key Concepts
 
 - Distributed tracing  
 - Correlation ID  
@@ -234,21 +234,20 @@ Monitoring + observability
 
 ---
 
-## 🔹 Sample KQL
+## Sample KQL
 
 requests  
 | summarize avg(duration) by name  
 
 ---
-
-👉 **Interview Line:**
+**Interview Line:**
 “We used Application Insights to identify slow APIs and debug production issues.”
 
 ---
 
-# ⚙️ 7. CI/CD (Azure DevOps)
+# 7. CI/CD (Azure DevOps)
 
-## 🔹 CI/CD Flow
+## CI/CD Flow
 
 1. Code commit  
 2. Build  
@@ -259,7 +258,7 @@ requests
 
 ---
 
-## 🔹 Key Concepts
+## Key Concepts
 
 - YAML pipelines  
 - PR policies  
@@ -268,7 +267,7 @@ requests
 
 ---
 
-## 🔹 Deployment Strategies
+## Deployment Strategies
 
 - Blue-Green  
 - Canary  
@@ -276,20 +275,20 @@ requests
 
 ---
 
-👉 **Interview Line:**
+**Interview Line:**
 “We implemented CI/CD pipelines with automated testing and zero downtime deployments.”
 
 ---
 
-# 🔄 8. GitHub Actions
+# 8. GitHub Actions
 
-## 🔹 Purpose
+## Purpose
 
 CI/CD inside GitHub  
 
 ---
 
-## 🔹 Concepts
+## Concepts
 
 - Workflow (.yml)  
 - Jobs  
@@ -298,16 +297,16 @@ CI/CD inside GitHub
 
 ---
 
-## 🔹 Advantage
+## Advantage
 
 - Lightweight  
 - Easy integration  
 
 ---
 
-# 🐳 9. Docker
+# 9. Docker
 
-## 🔹 Why Docker?
+## Why Docker?
 
 - Lightweight  
 - Fast  
@@ -315,7 +314,7 @@ CI/CD inside GitHub
 
 ---
 
-## 🔹 Key Concepts
+## Key Concepts
 
 - Image → Blueprint  
 - Container → Running instance  
@@ -324,7 +323,7 @@ CI/CD inside GitHub
 
 ---
 
-## 🔹 Best Practices
+## Best Practices
 
 - Multi-stage builds  
 - Minimal base images  
@@ -332,20 +331,20 @@ CI/CD inside GitHub
 
 ---
 
-👉 **Interview Line:**
+**Interview Line:**
 “Docker ensures consistent environments across development and production.”
 
 ---
 
-# ☸️ 10. Kubernetes (AKS)
+# 10. Kubernetes (AKS)
 
-## 🔹 Purpose
+## Purpose
 
 Container orchestration  
 
 ---
 
-## 🔹 Core Components
+## Core Components
 
 - Pod → Smallest unit  
 - Deployment → Manage pods  
@@ -354,15 +353,15 @@ Container orchestration
 
 ---
 
-## 🔹 Scaling
+## Scaling
 
 - HPA (Horizontal Pod Autoscaler)  
 
 ---
 
-# 🔁 11. Resilience & Reliability
+# 11. Resilience & Reliability
 
-## 🔹 Polly
+## Polly
 
 - Retry  
 - Circuit breaker  
@@ -370,7 +369,7 @@ Container orchestration
 
 ---
 
-## 🔹 Patterns
+## Patterns
 
 - Retry  
 - Fallback  
@@ -379,18 +378,18 @@ Container orchestration
 
 ---
 
-## 🔹 Rate Limiting (.NET 8)
+## Rate Limiting (.NET 8)
 
 Used to prevent abuse  
 
 ---
 
-👉 **Interview Line:**
+**Interview Line:**
 “We implemented Polly for retries and circuit breaker to handle failures gracefully.”
 
 ---
 
-# 🔥 Scenario Keywords (IMPORTANT)
+# Scenario Keywords (IMPORTANT)
 
 Use these words in interviews:
 
@@ -403,7 +402,7 @@ Use these words in interviews:
 
 ---
 
-# 🎯 Golden Answer Structure
+# Golden Answer Structure
 
 1. Detection  
 2. Analysis  
@@ -412,13 +411,13 @@ Use these words in interviews:
 
 ---
 
-# 🚀 Example Answer
+# Example Answer
 
 “We identified latency using Application Insights, found slow SQL queries, optimized them, and scaled the App Service. We also added alerts to prevent recurrence.”
 
 ---
 
-# 📌 Final Reminder
+# Final Reminder
 
 ❌ Weak:
 “Azure Functions is serverless”
@@ -428,4 +427,4 @@ Use these words in interviews:
 
 ---
 
-# 💯 End of Cheat Sheet
+# End of Cheat Sheet
