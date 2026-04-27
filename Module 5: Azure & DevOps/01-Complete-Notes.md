@@ -5,7 +5,7 @@
 
 ---
 
-# ABLE OF CONTENTS
+# TABLE OF CONTENTS
 
 1. Azure Fundamentals  
 2. Azure App Services  
