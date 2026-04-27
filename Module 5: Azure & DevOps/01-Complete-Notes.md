@@ -1,11 +1,11 @@
-# 🚀 Module 5: Azure & DevOps — Complete Notes (FULL VERSION)
+# Module 5: Azure & DevOps — Complete Notes (FULL VERSION)
 
 **Prepared for:** Full Stack .NET Developer (3–5 Years)  
 **Goal:** Crack 15+ LPA interviews with strong Azure + DevOps + Real-world explanation  
 
 ---
 
-# 📑 TABLE OF CONTENTS
+# ABLE OF CONTENTS
 
 1. Azure Fundamentals  
 2. Azure App Services  
@@ -21,9 +21,9 @@
 
 ---
 
-# ☁️ 1. AZURE FUNDAMENTALS
+# 1. AZURE FUNDAMENTALS
 
-## 🔹 Cloud Computing
+## Cloud Computing
 Cloud computing = On-demand access to computing resources over internet.
 
 ### Service Models
@@ -35,35 +35,35 @@ Cloud computing = On-demand access to computing resources over internet.
 | FaaS | Code only | Azure Functions |
 | SaaS | Nothing | Microsoft 365 |
 
-👉 **Interview Answer Tip:**
+**Interview Answer Tip:**
 “We used PaaS (App Service + Azure SQL) to avoid infra management and focus on business logic.”
 
 ---
 
-## 🔹 Resource Group
+## Resource Group
 Logical container for Azure resources.
 
 - Same lifecycle  
 - Same permissions  
 - Same billing  
 
-👉 Example:
+Example:
 `rg-hr-prod` → App Service + SQL + Redis + Key Vault
 
 ---
 
-## 🔹 Region & Availability Zone
+## Region & Availability Zone
 
 - Region = geographical location  
 - Availability Zone = multiple datacenters  
 
-👉 Used for:
+Used for:
 - High availability  
 - Disaster recovery  
 
 ---
 
-## 🔹 ARM vs Bicep vs Terraform
+## ARM vs Bicep vs Terraform
 
 | Tool | Description |
 |------|------------|
@@ -71,11 +71,11 @@ Logical container for Azure resources.
 | Bicep | Simplified Azure-native |
 | Terraform | Multi-cloud |
 
-👉 **Best Practice: Use Bicep**
+ **Best Practice: Use Bicep**
 
 ---
 
-## 🔹 Subscription vs Tenant
+## Subscription vs Tenant
 
 - Tenant → Identity boundary  
 - Subscription → Billing  
@@ -83,9 +83,9 @@ Logical container for Azure resources.
 
 ---
 
-# 🌐 2. AZURE APP SERVICES
+# 2. AZURE APP SERVICES
 
-## 🔹 What is App Service?
+## What is App Service?
 PaaS for hosting:
 - Web apps  
 - APIs  
@@ -93,7 +93,7 @@ PaaS for hosting:
 
 ---
 
-## 🔹 Features
+## Features
 - Auto scaling  
 - SSL support  
 - Deployment slots  
@@ -102,7 +102,7 @@ PaaS for hosting:
 
 ---
 
-## 🔹 App Service Plan
+## App Service Plan
 
 | Tier | Use Case |
 |------|--------|
@@ -111,11 +111,11 @@ PaaS for hosting:
 | Premium | High performance |
 | Isolated | Enterprise |
 
-👉 Multiple apps can share one plan → cost saving
+Multiple apps can share one plan → cost saving
 
 ---
 
-## 🔹 Deployment Slots (VERY IMPORTANT)
+## Deployment Slots (VERY IMPORTANT)
 
 - staging slot  
 - production slot  
@@ -123,16 +123,16 @@ PaaS for hosting:
 ### Flow:
 Deploy → Test → Swap → Production  
 
-👉 Benefits:
+Benefits:
 - Zero downtime  
 - Instant rollback  
 
-👉 **Interview Line:**
+**Interview Line:**
 “Used deployment slots for zero downtime deployment and quick rollback.”
 
 ---
 
-## 🔹 Scaling
+## Scaling
 
 ### Vertical Scaling
 Increase VM size
@@ -140,28 +140,28 @@ Increase VM size
 ### Horizontal Scaling
 Increase number of instances
 
-👉 Auto-scale triggers:
+Auto-scale triggers:
 - CPU  
 - Memory  
 - HTTP queue  
 
 ---
 
-## 🔹 Networking
+## Networking
 - VNet integration  
 - Private endpoint  
 - IP restrictions  
 
 ---
 
-# ⚡ 3. AZURE FUNCTIONS
+# 3. AZURE FUNCTIONS
 
-## 🔹 What is Azure Functions?
+## What is Azure Functions?
 Serverless compute service (event-driven)
 
 ---
 
-## 🔹 Hosting Plans
+## Hosting Plans
 
 | Plan | Description |
 |------|------------|
@@ -171,7 +171,7 @@ Serverless compute service (event-driven)
 
 ---
 
-## 🔹 Triggers
+## Triggers
 - HTTP  
 - Timer  
 - Queue  
@@ -180,21 +180,21 @@ Serverless compute service (event-driven)
 
 ---
 
-## 🔹 Bindings
+## Bindings
 Input/output connections
 
 ---
 
-## 🔹 Real Use Case
+## Real Use Case
 Employee request → Queue → Function → DB → Notification  
 
-👉 Used for:
+Used for:
 - Background jobs  
 - Async workflows  
 
 ---
 
-## 🔹 Durable Functions
+## Durable Functions
 Used for long-running workflows
 
 Example:
@@ -203,9 +203,9 @@ Example:
 
 ---
 
-# 🗄️ 4. AZURE SQL DATABASE
+# 4. AZURE SQL DATABASE
 
-## 🔹 Deployment Options
+## Deployment Options
 
 | Option | Use |
 |--------|----|
@@ -215,16 +215,16 @@ Example:
 
 ---
 
-## 🔹 Pricing Models
+## Pricing Models
 
 - DTU → Simple  
 - vCore → Flexible  
 
-👉 Prefer vCore
+Prefer vCore
 
 ---
 
-## 🔹 Performance Optimization
+## Performance Optimization
 
 - Indexing  
 - Query optimization  
@@ -233,7 +233,7 @@ Example:
 
 ---
 
-## 🔹 High Availability
+## High Availability
 
 - Built-in replication  
 - Geo-replication  
@@ -241,7 +241,7 @@ Example:
 
 ---
 
-## 🔹 Security
+## Security
 
 - TDE encryption  
 - Azure AD authentication  
@@ -250,9 +250,9 @@ Example:
 
 ---
 
-# 🔐 5. AZURE KEY VAULT
+# 5. AZURE KEY VAULT
 
-## 🔹 What is Key Vault?
+## What is Key Vault?
 Secure storage for:
 - Secrets  
 - Keys  
@@ -260,19 +260,19 @@ Secure storage for:
 
 ---
 
-## 🔹 Best Practice
+## Best Practice
 
 ✅ Use Managed Identity  
 ❌ Do NOT store secrets in code  
 
 ---
 
-## 🔹 Example
+## Example
 Fetch connection string from Key Vault
 
 ---
 
-## 🔹 Features
+## Features
 
 - Soft delete  
 - Purge protection  
@@ -280,9 +280,9 @@ Fetch connection string from Key Vault
 
 ---
 
-# 📊 6. APPLICATION INSIGHTS
+# 6. APPLICATION INSIGHTS
 
-## 🔹 What is it?
+## What is it?
 Monitoring tool for:
 - Requests  
 - Dependencies  
@@ -291,7 +291,7 @@ Monitoring tool for:
 
 ---
 
-## 🔹 Metrics
+## Metrics
 
 - Response time  
 - Failure rate  
@@ -299,27 +299,27 @@ Monitoring tool for:
 
 ---
 
-## 🔹 KQL Example
+## KQL Example
 
 ```kql
 requests
 | summarize avg(duration) by name
 ```
 
-## 🔗 Distributed Tracing
+## Distributed Tracing
 
 Tracks request flow across services:
 
 Frontend → API → Database  
 
-👉 Helps in:
+Helps in:
 - Debugging latency issues  
 - Identifying bottlenecks  
 - End-to-end request visibility  
 
 ---
 
-## 🔔 Alerts
+## Alerts
 
 Used for proactive monitoring.
 
@@ -330,16 +330,16 @@ Used for proactive monitoring.
 
 ---
 
-# ⚙️ 7. Azure DevOps & CI/CD
+# 7. Azure DevOps & CI/CD
 
-## 🔹 What is CI/CD?
+## What is CI/CD?
 
 - **CI (Continuous Integration)** → Build + Test  
 - **CD (Continuous Delivery/Deployment)** → Deploy  
 
 ---
 
-## 🔹 Pipeline Flow
+## Pipeline Flow
 
 1. Code commit  
 2. Build  
@@ -350,7 +350,7 @@ Used for proactive monitoring.
 
 ---
 
-## 🔹 YAML Example
+## YAML Example
 
 ```yaml
 trigger:
@@ -361,7 +361,7 @@ steps:
   - script: dotnet test
 ```
 
-## 🔹 Best Practices
+## Best Practices
 
 - Maintain **code coverage > 80%**  
 - Enforce **PR approvals**  
@@ -370,15 +370,15 @@ steps:
 
 ---
 
-# 🔄 8. GitHub Actions
+# 8. GitHub Actions
 
-## 🔹 What is GitHub Actions?
+## What is GitHub Actions?
 
 CI/CD tool integrated with GitHub repositories.
 
 ---
 
-## 🔹 Workflow Example
+## Workflow Example
 
 ```yaml
 on: push
@@ -393,15 +393,15 @@ Features
 ```
 ---
 
-# 🔄 8. Docker
+# 8. Docker
 
-## 🔹 Why Docker?
+## Why Docker?
 
 - Lightweight
 - Fast deployment
 - Consistent environments
 
- ## 🔹 Docker vs Virtual Machine
+ ## Docker vs Virtual Machine
 
 | Feature | Container | VM |
 |--------|----------|----|
@@ -410,7 +410,7 @@ Features
 
 ---
 
-## 🔹 Dockerfile Example
+## Dockerfile Example
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -424,15 +424,15 @@ Key Concepts
 Networking
 ```
 ---
-# ☸️ 10. Kubernetes (AKS)
+# 10. Kubernetes (AKS)
 
-## 🔹 What is Kubernetes?
+## What is Kubernetes?
 
 Container orchestration platform used to manage containers at scale.
 
 ---
 
-## 🔹 Core Components
+## Core Components
 
 - Pod → Smallest deployable unit  
 - Deployment → Manages pods  
@@ -441,15 +441,15 @@ Container orchestration platform used to manage containers at scale.
 
 ---
 
-## 🔹 Scaling
+## Scaling
 
 - Horizontal Pod Autoscaler (HPA)  
 
 ---
 
-# 🔁 11. Resilience
+# 11. Resilience
 
-## 🔹 Polly
+## Polly
 
 Handles:
 
@@ -459,7 +459,7 @@ Handles:
 
 ---
 
-## 🔹 OpenTelemetry
+## OpenTelemetry
 
 Used for:
 
@@ -469,7 +469,7 @@ Used for:
 
 ---
 
-## 🔹 Rate Limiting (.NET 8)
+## Rate Limiting (.NET 8)
 
 ```csharp
 app.UseRateLimiter();
