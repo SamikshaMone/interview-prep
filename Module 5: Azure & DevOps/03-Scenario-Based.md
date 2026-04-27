@@ -1,11 +1,11 @@
-# 🔥 Module 5: Azure & DevOps — Scenario-Based Questions
+# Module 5: Azure & DevOps — Scenario-Based Questions
 
 **Target Role:** .NET Full Stack Developer (3–5 yrs)  
 **Focus:** Real-world scenarios + structured answers (Detection → Analysis → Fix → Prevention)
 
 ---
 
-# 📑 Table of Contents
+# Table of Contents
 
 1. Production & Performance Issues  
 2. CI/CD & Deployment  
@@ -18,9 +18,9 @@
 
 ---
 
-# 🚨 1. Production & Performance Issues
+# 1. Production & Performance Issues
 
-## 🔹 Scenario 1: API latency increased (500ms → 5s)
+## Scenario 1: API latency increased (500ms → 5s)
 
 **Detection:**
 - Check Application Insights → Live Metrics  
@@ -46,7 +46,7 @@
 
 ---
 
-## 🔹 Scenario 2: High error rate after deployment
+## Scenario 2: High error rate after deployment
 
 **Detection:**
 - Alerts triggered (error spike)
@@ -63,7 +63,7 @@
 
 ---
 
-## 🔹 Scenario 3: App Service CPU at 100%
+## Scenario 3: App Service CPU at 100%
 
 **Detection:**
 - Azure Metrics → CPU usage  
@@ -83,7 +83,7 @@
 
 ---
 
-## 🔹 Scenario 4: Memory leak in production
+## Scenario 4: Memory leak in production
 
 **Approach:**
 - Capture memory dump  
@@ -93,9 +93,9 @@
 
 ---
 
-# ⚙️ 2. CI/CD & Deployment
+# 2. CI/CD & Deployment
 
-## 🔹 Scenario 5: Design CI/CD pipeline
+## Scenario 5: Design CI/CD pipeline
 
 **Flow:**
 1. Code commit  
@@ -108,7 +108,7 @@
 
 ---
 
-## 🔹 Scenario 6: Deployment failed
+## Scenario 6: Deployment failed
 
 **Approach:**
 - Rollback using slot swap  
@@ -118,7 +118,7 @@
 
 ---
 
-## 🔹 Scenario 7: Pipeline is slow
+## Scenario 7: Pipeline is slow
 
 **Optimization:**
 - Parallel execution  
@@ -128,7 +128,7 @@
 
 ---
 
-## 🔹 Scenario 8: Zero downtime deployment
+## Scenario 8: Zero downtime deployment
 
 **Solution:**
 - Use Deployment Slots  
@@ -136,9 +136,9 @@
 
 ---
 
-# 🔐 3. Security & Secrets
+# 3. Security & Secrets
 
-## 🔹 Scenario 9: Secret exposed in repository
+## Scenario 9: Secret exposed in repository
 
 **Action Plan:**
 1. Rotate credentials immediately  
@@ -148,7 +148,7 @@
 
 ---
 
-## 🔹 Scenario 10: Secure application
+## Scenario 10: Secure application
 
 **Solution:**
 - Managed Identity  
@@ -158,9 +158,9 @@
 
 ---
 
-# 📈 4. Scalability & Cost Optimization
+# 4. Scalability & Cost Optimization
 
-## 🔹 Scenario 11: Traffic spike
+## Scenario 11: Traffic spike
 
 **Solution:**
 - Enable auto-scaling  
@@ -169,7 +169,7 @@
 
 ---
 
-## 🔹 Scenario 12: Azure cost increased
+## Scenario 12: Azure cost increased
 
 **Approach:**
 - Analyze Azure Cost Management  
@@ -180,7 +180,7 @@
 
 ---
 
-## 🔹 Scenario 13: Improve scalability
+## Scenario 13: Improve scalability
 
 **Solution:**
 - Use microservices  
@@ -190,9 +190,9 @@
 
 ---
 
-# 🔁 5. Microservices & Distributed Systems
+# 5. Microservices & Distributed Systems
 
-## 🔹 Scenario 14: Service communication failure
+## Scenario 14: Service communication failure
 
 **Solution:**
 - Retry with exponential backoff  
@@ -201,7 +201,7 @@
 
 ---
 
-## 🔹 Scenario 15: Distributed transactions
+## Scenario 15: Distributed transactions
 
 **Solution:**
 - Saga pattern  
@@ -209,7 +209,7 @@
 
 ---
 
-## 🔹 Scenario 16: External API failure
+## Scenario 16: External API failure
 
 **Solution:**
 - Retry  
@@ -219,9 +219,9 @@
 
 ---
 
-# ☸️ 6. Kubernetes & Containers
+# 6. Kubernetes & Containers
 
-## 🔹 Scenario 17: Pod CrashLoopBackOff
+## Scenario 17: Pod CrashLoopBackOff
 
 **Approach:**
 - Check logs  
@@ -233,7 +233,7 @@
 
 ---
 
-## 🔹 Scenario 18: Kubernetes deployment fails
+## Scenario 18: Kubernetes deployment fails
 
 **Approach:**
 - Validate YAML  
@@ -242,7 +242,7 @@
 
 ---
 
-## 🔹 Scenario 19: Container not starting
+## Scenario 19: Container not starting
 
 **Solution:**
 - Check logs  
@@ -251,9 +251,9 @@
 
 ---
 
-# 🗄️ 7. Database & Data Handling
+# 7. Database & Data Handling
 
-## 🔹 Scenario 20: SQL connection pool exhausted
+## Scenario 20: SQL connection pool exhausted
 
 **Solution:**
 - Correct DbContext lifetime  
@@ -262,7 +262,7 @@
 
 ---
 
-## 🔹 Scenario 21: Data inconsistency
+## Scenario 21: Data inconsistency
 
 **Solution:**
 - Cache invalidation strategy  
@@ -270,7 +270,7 @@
 
 ---
 
-## 🔹 Scenario 22: Database performance issue
+## Scenario 22: Database performance issue
 
 **Solution:**
 - Add indexes  
@@ -279,7 +279,7 @@
 
 ---
 
-## 🔹 Scenario 23: Zero downtime DB migration
+## Scenario 23: Zero downtime DB migration
 
 **Solution (Expand-Contract):**
 1. Add new schema  
@@ -289,9 +289,9 @@
 
 ---
 
-# 📊 8. Monitoring & Observability
+# 8. Monitoring & Observability
 
-## 🔹 Scenario 24: Monitoring strategy
+## Scenario 24: Monitoring strategy
 
 **Solution:**
 - Application Insights  
@@ -301,7 +301,7 @@
 
 ---
 
-## 🔹 Scenario 25: Debug slow API
+## Scenario 25: Debug slow API
 
 **Approach:**
 - Check Application Insights  
@@ -310,7 +310,7 @@
 
 ---
 
-## 🔹 Scenario 26: High error rate
+## Scenario 26: High error rate
 
 **Solution:**
 - Alerts  
@@ -319,7 +319,7 @@
 
 ---
 
-## 🔹 Scenario 27: Distributed tracing issue
+## Scenario 27: Distributed tracing issue
 
 **Solution:**
 - Use correlation ID  
@@ -327,7 +327,7 @@
 
 ---
 
-## 🔹 Scenario 28: Logging strategy
+## Scenario 28: Logging strategy
 
 **Solution:**
 - Structured logging  
