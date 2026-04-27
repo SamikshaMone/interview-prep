@@ -1,22 +1,22 @@
-# 🎯 Module 5: Azure & DevOps — Interview Questions with Answers
+# Module 5: Azure & DevOps — Interview Questions with Answers
 
 ---
 
-# ☁️ SECTION A: Azure Fundamentals
+# SECTION A: Azure Fundamentals
 
 ## Q1. What is Cloud Computing?
 
-📖 Definition:  
+Definition:  
 Cloud computing provides computing resources (servers, storage, DB) over the internet.
 
-🎯 Answer:  
+Answer:  
 “In our HR project, we used Azure PaaS services like App Service and Azure SQL so we didn’t have to manage infrastructure.”
 
 ---
 
 ## Q2. Explain IaaS, PaaS, SaaS, FaaS
 
-🎯 Answer:
+Answer:
 - IaaS → Azure VM (you manage OS)
 - PaaS → App Service (you manage app)
 - SaaS → Microsoft 365
@@ -26,34 +26,34 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q3. What is a Resource Group?
 
-📖 Logical container for resources.
+Logical container for resources.
 
-🎯 Answer:  
+Answer:  
 “We group resources by environment like dev, staging, and prod for easier management.”
 
 ---
 
 ## Q4. Can a resource belong to multiple resource groups?
 
-❌ No — only one.
+No — only one.
 
 ---
 
 ## Q5. What is an Azure Region?
 
-📖 Geographic location where resources are hosted.
+Geographic location where resources are hosted.
 
 ---
 
 ## Q6. What are Availability Zones?
 
-📖 Multiple datacenters in a region for high availability.
+Multiple datacenters in a region for high availability.
 
 ---
 
 ## Q7. ARM vs Bicep?
 
-🎯 Answer:  
+Answer:  
 “Bicep is preferred because it is simpler and more readable than ARM JSON.”
 
 ---
@@ -67,48 +67,48 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q9. What is Azure Advisor?
 
-📖 Provides recommendations for performance, cost, and security.
+Provides recommendations for performance, cost, and security.
 
 ---
 
 ## Q10. What is Azure Service Health?
 
-📖 Shows outages affecting resources.
+Shows outages affecting resources.
 
 ---
 
-# 🌐 SECTION B: Azure App Services
+# SECTION B: Azure App Services
 
 ## Q11. What is Azure App Service?
 
-📖 PaaS platform to host APIs and web apps.
+PaaS platform to host APIs and web apps.
 
-🎯 Answer:  
+Answer:  
 “We host our .NET APIs on App Service with auto-scaling and SSL.”
 
 ---
 
 ## Q12. What are Deployment Slots?
 
-📖 Staging environments for deployment.
+Staging environments for deployment.
 
-🎯 Answer:  
+Answer:  
 “We deploy to staging → test → swap → production with zero downtime.”
 
 ---
 
 ## Q13. How does slot swap work?
 
-📖 Swaps staging with production.
+Swaps staging with production.
 
-🎯 Answer:  
+Answer:  
 “It ensures zero downtime and quick rollback.”
 
 ---
 
 ## Q14. What is Always On?
 
-📖 Keeps app warm.
+Keeps app warm.
 
 ---
 
@@ -121,48 +121,48 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q16. What is Kudu?
 
-📖 Debugging console for App Service.
+Debugging console for App Service.
 
 ---
 
 ## Q17. What is VNet integration?
 
-📖 Connect App Service to private network.
+Connect App Service to private network.
 
 ---
 
 ## Q18. What is Private Endpoint?
 
-📖 Secure private access to resources.
+Secure private access to resources.
 
 ---
 
 ## Q19. Authentication in App Service?
 
-📖 Built-in auth using Azure AD, Google, etc.
+Built-in auth using Azure AD, Google, etc.
 
 ---
 
 ## Q20. Backup in App Service?
 
-📖 Automated backups stored in storage account.
+Automated backups stored in storage account.
 
 ---
 
-# ⚡ SECTION C: Azure Functions
+# SECTION C: Azure Functions
 
 ## Q21. What is Azure Functions?
 
-📖 Serverless compute service.
+Serverless compute service.
 
-🎯 Answer:  
+Answer:  
 “We use Functions for async processing like background jobs.”
 
 ---
 
 ## Q22. Consumption vs Premium?
 
-🎯 Answer:
+Answer:
 - Consumption → Pay per execution  
 - Premium → No cold start  
 
@@ -176,7 +176,7 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q24. How to avoid cold start?
 
-🎯 Answer:
+Answer:
 “Use Premium plan or keep function warm.”
 
 ---
@@ -198,19 +198,19 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q27. What is Timer Trigger?
 
-📖 Scheduled execution.
+ Scheduled execution.
 
 ---
 
 ## Q28. What are Durable Functions?
 
-📖 Used for long-running workflows.
+Used for long-running workflows.
 
 ---
 
 ## Q29. Function security?
 
-📖 Use keys, API Management, or Azure AD.
+Use keys, API Management, or Azure AD.
 
 ---
 
@@ -221,11 +221,11 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ---
 
-# 🗄️ SECTION D: Azure SQL
+# SECTION D: Azure SQL
 
 ## Q31. Azure SQL vs SQL Server?
 
-🎯 Answer:  
+Answer:  
 “Azure SQL is PaaS with built-in HA and auto backups.”
 
 ---
@@ -246,19 +246,19 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q34. What is Geo-replication?
 
-📖 Secondary DB in another region.
+Secondary DB in another region.
 
 ---
 
 ## Q35. What is Elastic Pool?
 
-📖 Shared resources for multiple DBs.
+Shared resources for multiple DBs.
 
 ---
 
 ## Q36. What is Serverless DB?
 
-📖 Auto scaling + auto pause.
+Auto scaling + auto pause.
 
 ---
 
@@ -272,7 +272,7 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q38. What is Indexing?
 
-📖 Improves query performance.
+Improves query performance.
 
 ---
 
@@ -285,22 +285,22 @@ Cloud computing provides computing resources (servers, storage, DB) over the int
 
 ## Q40. N+1 problem?
 
-🎯 Answer:  
+Answer:  
 “Multiple DB calls due to lazy loading — solved using Include() in EF Core.”
 
 ---
-# 🎯 Module 5: Azure & DevOps — Interview Questions with Answers (Part 2)
+# Module 5: Azure & DevOps — Interview Questions with Answers (Part 2)
 
 ---
 
-# 🔐 SECTION E: Azure Key Vault & Security
+# SECTION E: Azure Key Vault & Security
 
 ## Q41. What is Azure Key Vault?
 
-📖 Definition:  
+Definition:  
 A cloud service to securely store secrets, keys, and certificates.
 
-🎯 Answer:  
+Answer:  
 “We store connection strings, API keys, and secrets in Key Vault instead of appsettings to improve security.”
 
 ---
@@ -315,9 +315,9 @@ A cloud service to securely store secrets, keys, and certificates.
 
 ## Q43. What is Managed Identity?
 
-📖 Identity provided by Azure to access resources securely.
+Identity provided by Azure to access resources securely.
 
-🎯 Answer:  
+Answer:  
 “We use Managed Identity so our app can access Key Vault without storing credentials.”
 
 ---
@@ -338,26 +338,26 @@ A cloud service to securely store secrets, keys, and certificates.
 
 ## Q46. What is Soft Delete?
 
-📖 Deleted secrets can be recovered.
+Deleted secrets can be recovered.
 
 ---
 
 ## Q47. What is Purge Protection?
 
-📖 Prevents permanent deletion.
+Prevents permanent deletion.
 
 ---
 
 ## Q48. How to access Key Vault in .NET?
 
-🎯 Answer:  
+Answer:  
 “Using DefaultAzureCredential and Azure SDK to fetch secrets securely.”
 
 ---
 
 ## Q49. How do you rotate secrets?
 
-🎯 Answer:  
+Answer:  
 “Automate rotation using Azure Functions or scheduled jobs.”
 
 ---
@@ -369,7 +369,7 @@ A cloud service to securely store secrets, keys, and certificates.
 
 ---
 
-# 📊 SECTION F: Monitoring & Application Insights
+# SECTION F: Monitoring & Application Insights
 
 ## Q51. What is Application Insights?
 
@@ -388,22 +388,22 @@ A cloud service to securely store secrets, keys, and certificates.
 
 ## Q53. What is Distributed Tracing?
 
-📖 Tracks a request across services.
+Tracks a request across services.
 
-🎯 Answer:  
+Answer:  
 “We use correlation IDs to trace a request from frontend → API → DB.”
 
 ---
 
 ## Q54. What is a Correlation ID?
 
-📖 Unique ID for tracking request across systems.
+Unique ID for tracking request across systems.
 
 ---
 
 ## Q55. What is KQL?
 
-📖 Query language for logs.
+Query language for logs.
 
 ---
 
@@ -417,10 +417,10 @@ requests
 ---
 ## Q57. What are Alerts?
 
-📖 **Definition:**  
+**Definition:**  
 Alerts notify when specific conditions are met.
 
-🎯 **Answer:**  
+**Answer:**  
 “We configure alerts for high CPU, slow response time, and error spikes.”
 
 ---
@@ -435,45 +435,45 @@ Alerts notify when specific conditions are met.
 
 ## Q59. What is Live Metrics?
 
-📖 **Definition:**  
+**Definition:**  
 Real-time monitoring dashboard.
 
 ---
 
 ## Q60. What are Health Checks?
 
-📖 **Definition:**  
+**Definition:**  
 Endpoints used to verify system health.
 
-🎯 **Answer:**  
+**Answer:**  
 “We expose `/health` endpoints to monitor DB, cache, and external APIs.”
 
 ---
 
 ## Q61. Serilog integration?
 
-🎯 **Answer:**  
+**Answer:**  
 “We use Serilog to generate structured logs and send them to Application Insights.”
 
 ---
 
 ## Q62. What is Sampling?
 
-📖 **Definition:**  
+**Definition:**  
 Reduces telemetry volume to optimize performance.
 
 ---
 
 ## Q63. Why use Application Insights?
 
-🎯 **Answer:**  
+**Answer:**  
 “It helps monitor performance, track failures, and debug production issues.”
 
 ---
 
 ## Q64. How to debug slow API?
 
-🎯 **Answer:**
+**Answer:**
 
 1. Check Application Insights  
 2. Identify slow endpoints  
@@ -484,12 +484,12 @@ Reduces telemetry volume to optimize performance.
 
 ## Q65. What is Dependency Tracking?
 
-📖 **Definition:**  
+**Definition:**  
 Tracks external calls like SQL, HTTP APIs, Redis.
 
 ---
 
-# ⚙️ SECTION G: Azure DevOps & CI/CD
+# SECTION G: Azure DevOps & CI/CD
 
 ## Q66. What is CI/CD?
 
@@ -517,7 +517,7 @@ Tracks external calls like SQL, HTTP APIs, Redis.
 
 ## Q69. What is a Pipeline?
 
-📖 **Definition:**  
+**Definition:**  
 Automated workflow for building and deploying applications.
 
 ---
@@ -539,14 +539,14 @@ Automated workflow for building and deploying applications.
 
 ## Q72. What are Variable Groups?
 
-📖 **Definition:**  
+**Definition:**  
 Reusable variables across pipelines.
 
 ---
 
 ## Q73. What is Service Connection?
 
-📖 **Definition:**  
+**Definition:**  
 Secure connection to Azure or external services.
 
 ---
@@ -560,10 +560,10 @@ Secure connection to Azure or external services.
 
 ## Q75. What are Approvals & Gates?
 
-📖 **Definition:**  
+**Definition:**  
 Checks before deployment.
 
-🎯 **Answer:**  
+**Answer:**  
 “We use manual approval before production deployment.”
 
 ---
@@ -585,7 +585,7 @@ Checks before deployment.
 
 ## Q78. Git Branching Strategy?
 
-🎯 **Answer:**  
+**Answer:**  
 “We use feature branches and merge via pull requests to the main branch.”
 
 ---
@@ -600,30 +600,30 @@ Checks before deployment.
 
 ## Q80. Database migration in CI/CD?
 
-🎯 **Answer:**  
+**Answer:**  
 “We use EF Core migrations and ensure backward compatibility during deployment.”
 
 ---
 
-# 🎯 Module 5: Azure & DevOps — Interview Questions with Answers (Part 3)
+# Module 5: Azure & DevOps — Interview Questions with Answers (Part 3)
 
 ---
 
-# 🔄 SECTION H: GitHub Actions
+# SECTION H: GitHub Actions
 
 ## Q81. What is GitHub Actions?
 
-📖 **Definition:**  
+**Definition:**  
 CI/CD tool integrated with GitHub to automate workflows.
 
-🎯 **Answer:**  
+**Answer:**  
 “We use GitHub Actions to automate build, test, and deployment pipelines directly from our repository.”
 
 ---
 
 ## Q82. Workflow structure in GitHub Actions?
 
-📖 **Definition:**  
+**Definition:**  
 A workflow is defined in a YAML file and consists of:
 - Events (`on`)
 - Jobs
@@ -636,7 +636,7 @@ A workflow is defined in a YAML file and consists of:
 - GitHub Actions → Native GitHub CI/CD  
 - Azure DevOps → Full DevOps suite  
 
-🎯 **Answer:**  
+**Answer:**  
 “We use GitHub Actions for lightweight CI/CD and Azure DevOps for enterprise pipelines.”
 
 ---
@@ -650,23 +650,23 @@ A workflow is defined in a YAML file and consists of:
 
 ## Q85. What is Matrix Strategy?
 
-📖 **Definition:**  
+**Definition:**  
 Runs jobs in parallel across multiple configurations.
 
 ---
 
 ## Q86. What are Reusable Workflows?
 
-📖 **Definition:**  
+**Definition:**  
 Workflows that can be reused across multiple repositories.
 
 ---
 
-# 🐳 SECTION I: Docker
+# SECTION I: Docker
 
 ## Q87. What is Docker?
 
-📖 **Definition:**  
+**Definition:**  
 Containerization platform to package applications with dependencies.
 
 ---
@@ -682,17 +682,17 @@ Containerization platform to package applications with dependencies.
 
 ## Q89. What is a Dockerfile?
 
-📖 **Definition:**  
+**Definition:**  
 File containing instructions to build Docker image.
 
 ---
 
 ## Q90. What is Multi-stage build?
 
-📖 **Definition:**  
+**Definition:**  
 Uses multiple stages to reduce image size.
 
-🎯 **Answer:**  
+**Answer:**  
 “Multi-stage builds reduce final image size and improve security.”
 
 ---
@@ -708,7 +708,7 @@ Uses multiple stages to reduce image size.
 
 ## Q92. What is Docker Compose?
 
-📖 **Definition:**  
+**Definition:**  
 Tool to run multi-container applications.
 
 ---
@@ -722,14 +722,14 @@ Tool to run multi-container applications.
 
 ## Q94. Docker Networking?
 
-📖 **Definition:**  
+**Definition:**  
 Allows communication between containers.
 
 ---
 
 ## Q95. How to reduce Docker image size?
 
-🎯 **Answer:**
+**Answer:**
 - Use Alpine base image  
 - Multi-stage builds  
 - Remove unnecessary files  
@@ -738,25 +738,25 @@ Allows communication between containers.
 
 ## Q96. Docker security best practices?
 
-🎯 **Answer:**
+**Answer:**
 - Scan images  
 - Avoid root user  
 - Use minimal base images  
 
 ---
 
-# ☸️ SECTION J: Kubernetes (AKS)
+# SECTION J: Kubernetes (AKS)
 
 ## Q97. What is Kubernetes?
 
-📖 **Definition:**  
+**Definition:**  
 Container orchestration platform.
 
 ---
 
 ## Q98. What is AKS?
 
-📖 **Definition:**  
+**Definition:**  
 Azure-managed Kubernetes service.
 
 ---
@@ -785,14 +785,14 @@ Azure-managed Kubernetes service.
 
 ## Q102. What is Ingress?
 
-📖 **Definition:**  
+**Definition:**  
 Handles HTTP routing.
 
 ---
 
 ## Q103. What is HPA?
 
-📖 **Definition:**  
+**Definition:**  
 Auto-scales pods based on CPU/memory.
 
 ---
@@ -819,11 +819,11 @@ Auto-scales pods based on CPU/memory.
 
 ---
 
-# 🔁 SECTION K: Resilience & Reliability
+# SECTION K: Resilience & Reliability
 
 ## Q107. What is Polly?
 
-📖 **Definition:**  
+**Definition:**  
 Resilience library for handling failures.
 
 ---
@@ -837,98 +837,97 @@ Resilience library for handling failures.
 
 ## Q109. What is Timeout Policy?
 
-📖 **Definition:**  
+**Definition:**  
 Stops request if it exceeds time limit.
 
 ---
 
 ## Q110. What is Bulkhead Pattern?
 
-📖 **Definition:**  
+**Definition:**  
 Limits concurrent requests to avoid overload.
 
 ---
 
 ## Q111. What is Fallback?
 
-📖 **Definition:**  
+**Definition:**  
 Return alternate response if failure occurs.
 
 ---
 
 ## Q112. What is OpenTelemetry?
 
-📖 **Definition:**  
+**Definition:**  
 Observability framework for logs, traces, and metrics.
 
 ---
 
 ## Q113. Rate limiting in .NET 8?
 
-🎯 **Answer:**  
+**Answer:**  
 “Used middleware to limit requests per user to prevent abuse.”
 
 ---
 
 ## Q114. What is Idempotency?
 
-📖 **Definition:**  
+**Definition:**  
 Same request produces same result.
 
 ---
 
 ## Q115. Why is Idempotency important?
 
-🎯 **Answer:**  
+**Answer:**  
 “Prevents duplicate operations during retries.”
 
 ---
 
 ## Q116. What is Chaos Engineering?
 
-📖 **Definition:**  
+ **Definition:**  
 Testing system resilience by introducing failures.
 
 ---
 
 ## Q117. What is Graceful Shutdown?
 
-📖 **Definition:**  
+**Definition:**  
 Allows app to finish processing before shutting down.
 
 ---
 
 ## Q118. Retry vs Circuit Breaker order?
 
-🎯 **Answer:**  
+**Answer:**  
 “Retry inside circuit breaker so failures are counted properly.”
 
 ---
 
 ## Q119. What is Exponential Backoff?
 
-📖 **Definition:**  
+**Definition:**  
 Increasing delay between retries.
 
 ---
 
 ## Q120. Why use Resilience patterns?
 
-🎯 **Answer:**  
+**Answer:**  
 “To ensure system stability under failures and high load.”
 
 ---
-# 🎯 Module 5: Azure & DevOps — Interview Questions with Answers (Part 4)
+# Module 5: Azure & DevOps — Interview Questions with Answers (Part 4)
 
 ---
 
-# 🔥 SECTION L: Scenario-Based Questions (MOST IMPORTANT)
+# SECTION L: Scenario-Based Questions (MOST IMPORTANT)
 
 ---
 
 ## Q121. API latency increased suddenly in production. How do you debug?
-
-🎯 **Answer:**
+ **Answer:**
 
 1. Check Application Insights (Live Metrics)  
 2. Identify slow endpoints (P95 latency)  
@@ -941,7 +940,7 @@ Increasing delay between retries.
 
 ## Q122. Design CI/CD pipeline for microservices.
 
-🎯 **Answer:**
+**Answer:**
 
 - Separate pipelines per service  
 - Build → Test → Docker build → Push to registry  
@@ -953,7 +952,7 @@ Increasing delay between retries.
 
 ## Q123. Production errors increased after deployment. What do you do?
 
-🎯 **Answer:**
+**Answer:**
 
 1. Rollback using deployment slots  
 2. Monitor error rate  
@@ -965,7 +964,7 @@ Increasing delay between retries.
 
 ## Q124. Secret leaked in repository. What is your action plan?
 
-🎯 **Answer:**
+**Answer:**
 
 1. Rotate credentials immediately  
 2. Remove from repo history  
@@ -976,7 +975,7 @@ Increasing delay between retries.
 
 ## Q125. How to achieve zero-downtime DB migration?
 
-🎯 **Answer:**
+**Answer:**
 
 Use **Expand-Contract pattern**:
 
@@ -989,7 +988,7 @@ Use **Expand-Contract pattern**:
 
 ## Q126. Redis cache goes down. What happens?
 
-🎯 **Answer:**
+**Answer:**
 
 - Use fallback to DB  
 - Avoid app crash  
@@ -1000,7 +999,7 @@ Use **Expand-Contract pattern**:
 
 ## Q127. Azure cost suddenly increased. How do you investigate?
 
-🎯 **Answer:**
+**Answer:**
 
 1. Use Azure Cost Management  
 2. Identify high-cost resources  
@@ -1011,7 +1010,7 @@ Use **Expand-Contract pattern**:
 
 ## Q128. Pipeline takes too long. How to optimize?
 
-🎯 **Answer:**
+**Answer:**
 
 - Parallel jobs  
 - Cache dependencies  
@@ -1022,7 +1021,7 @@ Use **Expand-Contract pattern**:
 
 ## Q129. App Service CPU is 100%. What to do?
 
-🎯 **Answer:**
+**Answer:**
 
 1. Check App Insights  
 2. Identify heavy endpoints  
@@ -1033,7 +1032,7 @@ Use **Expand-Contract pattern**:
 
 ## Q130. Design Disaster Recovery (DR) strategy.
 
-🎯 **Answer:**
+**Answer:**
 
 - Multi-region deployment  
 - Geo-replication for DB  
@@ -1044,7 +1043,7 @@ Use **Expand-Contract pattern**:
 
 ## Q131. SQL connection pool exhausted. How to fix?
 
-🎯 **Answer:**
+**Answer:**
 
 - Use proper DbContext scope  
 - Enable connection pooling  
@@ -1054,7 +1053,7 @@ Use **Expand-Contract pattern**:
 
 ## Q132. External API is unreliable. How to handle?
 
-🎯 **Answer:**
+**Answer:**
 
 - Retry with exponential backoff  
 - Circuit breaker (Polly)  
@@ -1065,7 +1064,7 @@ Use **Expand-Contract pattern**:
 
 ## Q133. Pipeline passes but production fails. Why?
 
-🎯 **Answer:**
+**Answer:**
 
 - Environment mismatch  
 - Missing configs  
@@ -1075,7 +1074,7 @@ Use **Expand-Contract pattern**:
 
 ## Q134. Redis vs DB inconsistency issue.
 
-🎯 **Answer:**
+**Answer:**
 
 - Use cache-aside pattern  
 - Invalidate cache properly  
@@ -1085,7 +1084,7 @@ Use **Expand-Contract pattern**:
 
 ## Q135. Improve system scalability.
 
-🎯 **Answer:**
+**Answer:**
 
 - Use auto-scaling  
 - Load balancing  
@@ -1095,7 +1094,7 @@ Use **Expand-Contract pattern**:
 
 ## Q136. High error rate in production.
 
-🎯 **Answer:**
+**Answer:**
 
 1. Check logs  
 2. Identify failing endpoints  
@@ -1106,7 +1105,7 @@ Use **Expand-Contract pattern**:
 
 ## Q137. API response time degraded.
 
-🎯 **Answer:**
+**Answer:**
 
 - Check DB queries  
 - Optimize indexes  
@@ -1116,7 +1115,7 @@ Use **Expand-Contract pattern**:
 
 ## Q138. Microservices communication failure.
 
-🎯 **Answer:**
+**Answer:**
 
 - Retry  
 - Circuit breaker  
@@ -1126,7 +1125,7 @@ Use **Expand-Contract pattern**:
 
 ## Q139. Handle high traffic spike.
 
-🎯 **Answer:**
+**Answer:**
 
 - Auto-scale  
 - Load balancer  
@@ -1136,7 +1135,7 @@ Use **Expand-Contract pattern**:
 
 ## Q140. Design monitoring strategy.
 
-🎯 **Answer:**
+**Answer:**
 
 - Application Insights  
 - Alerts  
@@ -1147,7 +1146,7 @@ Use **Expand-Contract pattern**:
 
 ## Q141. Kubernetes pod crash (CrashLoopBackOff).
 
-🎯 **Answer:**
+**Answer:**
 
 - Check logs  
 - Fix config issues  
@@ -1157,7 +1156,7 @@ Use **Expand-Contract pattern**:
 
 ## Q142. Deployment rollback strategy.
 
-🎯 **Answer:**
+**Answer:**
 
 - Use deployment slots  
 - Use versioning  
@@ -1167,7 +1166,7 @@ Use **Expand-Contract pattern**:
 
 ## Q143. Secure application in Azure.
 
-🎯 **Answer:**
+**Answer:**
 
 - Key Vault  
 - Managed Identity  
@@ -1177,7 +1176,7 @@ Use **Expand-Contract pattern**:
 
 ## Q144. Improve API performance.
 
-🎯 **Answer:**
+**Answer:**
 
 - Optimize queries  
 - Use caching  
@@ -1187,7 +1186,7 @@ Use **Expand-Contract pattern**:
 
 ## Q145. Reduce infrastructure cost.
 
-🎯 **Answer:**
+**Answer:**
 
 - Use serverless  
 - Scale down unused resources  
@@ -1197,7 +1196,7 @@ Use **Expand-Contract pattern**:
 
 ## Q146. Debug memory leak.
 
-🎯 **Answer:**
+**Answer:**
 
 - Use profiling tools  
 - Analyze heap  
@@ -1207,7 +1206,7 @@ Use **Expand-Contract pattern**:
 
 ## Q147. Design logging strategy.
 
-🎯 **Answer:**
+**Answer:**
 
 - Structured logging (Serilog)  
 - Centralized logging  
@@ -1217,7 +1216,7 @@ Use **Expand-Contract pattern**:
 
 ## Q148. Handle distributed transactions.
 
-🎯 **Answer:**
+**Answer:**
 
 - Saga pattern  
 - Event-driven architecture  
@@ -1226,7 +1225,7 @@ Use **Expand-Contract pattern**:
 
 ## Q149. Ensure system resilience.
 
-🎯 **Answer:**
+**Answer:**
 
 - Retry  
 - Circuit breaker  
@@ -1236,7 +1235,7 @@ Use **Expand-Contract pattern**:
 
 ## Q150. Improve deployment reliability.
 
-🎯 **Answer:**
+**Answer:**
 
 - CI/CD pipelines  
 - Automated testing  
@@ -1246,7 +1245,7 @@ Use **Expand-Contract pattern**:
 
 ## Q151. API security best practices.
 
-🎯 **Answer:**
+**Answer:**
 
 - JWT authentication  
 - HTTPS  
@@ -1256,7 +1255,7 @@ Use **Expand-Contract pattern**:
 
 ## Q152. Handling throttling errors.
 
-🎯 **Answer:**
+**Answer:**
 
 - Retry with backoff  
 - Rate limiting  
@@ -1265,7 +1264,7 @@ Use **Expand-Contract pattern**:
 
 ## Q153. Improve database performance.
 
-🎯 **Answer:**
+**Answer:**
 
 - Indexing  
 - Query optimization  
@@ -1275,7 +1274,7 @@ Use **Expand-Contract pattern**:
 
 ## Q154. Multi-region deployment challenges.
 
-🎯 **Answer:**
+**Answer:**
 
 - Data consistency  
 - Latency  
@@ -1285,7 +1284,7 @@ Use **Expand-Contract pattern**:
 
 ## Q155. Debug failing Kubernetes deployment.
 
-🎯 **Answer:**
+**Answer:**
 
 - Check logs  
 - Verify config  
@@ -1295,7 +1294,7 @@ Use **Expand-Contract pattern**:
 
 ## Q156. Handling API versioning.
 
-🎯 **Answer:**
+**Answer:**
 
 - Use versioning in routes  
 - Maintain backward compatibility  
@@ -1304,7 +1303,7 @@ Use **Expand-Contract pattern**:
 
 ## Q157. Improve frontend performance.
 
-🎯 **Answer:**
+**Answer:**
 
 - Lazy loading  
 - Code splitting  
@@ -1313,7 +1312,7 @@ Use **Expand-Contract pattern**:
 
 ## Q158. Event-driven architecture benefits.
 
-🎯 **Answer:**
+**Answer:**
 
 - Loose coupling  
 - Scalability  
@@ -1322,7 +1321,7 @@ Use **Expand-Contract pattern**:
 
 ## Q159. Handling concurrency issues.
 
-🎯 **Answer:**
+**Answer:**
 
 - Optimistic concurrency  
 - Locks  
@@ -1331,7 +1330,7 @@ Use **Expand-Contract pattern**:
 
 ## Q160. How to prepare for production readiness?
 
-🎯 **Answer:**
+**Answer:**
 
 - Monitoring  
 - Logging  
@@ -1340,7 +1339,7 @@ Use **Expand-Contract pattern**:
 
 ---
 
-# 🎯 FINAL INTERVIEW STRATEGY
+# FINAL INTERVIEW STRATEGY
 
 - Always give **real project examples**
 - Use strong keywords:
